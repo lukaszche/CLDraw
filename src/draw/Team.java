@@ -1,12 +1,17 @@
 package draw;
 
 public class Team {
-	private int coef;
+	private double coef;
 	private String name;
 	private Nation nation;
 
+	public Team(String name, Nation nation, double coef){
+		this.name=name;
+		this.coef=coef;
+		this.nation=nation;
+	}
 	
-	public int getCoef() {
+	public double getCoef() {
 		return coef;
 	}
 	public void setCoef(int coef) {
